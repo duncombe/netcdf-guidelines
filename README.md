@@ -14,24 +14,17 @@ NetCDF describes a file format. OPeNDAP is a network protocol to describe how to
    What happens if we take that set of data and load it into:
       - THREDDS? 
       - ncSOS? 
-      - ncISO?    
-    
-      
+      - ncISO?     
+4. "I think there are TDS endpoints on their page (NODC templates), look through the rubric scores to see how they are doing." I don't find what you are talking about?
+5. 
+
 
 4. Draft of the document starts below:
 
 # netCDF Guidelines
 ## Documentation and examples of IOOS compliant netCDF files.
 
-TODO: 
-   - 
-   - start with the [NODC templates](http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/). *Since IOOS channels data to NODC we should reiterate NODC's hope that providers will see the benefits in structuring data to the template conventions.*
-   
-   I think there are TDS endpoints on their page, look through the rubric scores to see how they are doing.
-
-This repository provides documentation links and examples to encourage the IOOS community to more effectively use OPeNDAP, netCDF and related technologies to achieve interoperability.  [Hankin, et al](http://www.oceanobs09.net/proceedings/cwp/cwp41/), provide an excellent summary of how the trio of standards evolved and arguments for continuing a path toward interoperability based largely on the standards. This document, and the accompanying repository of material provides specific guidance for IOOS data providers, especially the 11 regional associations, shall implement the recommendations of [Hankin, et al](http://www.oceanobs09.net/proceedings/cwp/cwp41/). Additionally, this repository will provide examples of good data files and guidance for configuring OPeNDAP servers. 
-
-Information abouut netCDF [here](http://www.unidata.ucar.edu/software/netcdf/docs/faq.html).
+This repository provides documentation links and examples to encourage the IOOS community to more effectively use OPeNDAP, netCDF and related technologies to achieve interoperability.  [Hankin, et al](http://www.oceanobs09.net/proceedings/cwp/cwp41/), provide an excellent summary of how the trio of standards (netCDF, CF, and OPeNDAP) evolved and arguments for continuing a path toward interoperability based largely on the standards. This document, and the accompanying repository of material provides specific guidance for IOOS data providers, especially the 11 regional associations, shall implement the recommendations of [Hankin, et al](http://www.oceanobs09.net/proceedings/cwp/cwp41/). Additionally, this repository will provide examples of good data files and guidance for configuring OPeNDAP servers. 
 
 The primary objective of this document is to ensure that the data published according to these guidelines fit into the larger DMAC system and enables the following capabilities.
 
@@ -43,6 +36,7 @@ The primary objective of this document is to ensure that the data published acco
 
 ## Scope
 Is this primarily about netCDF files or should it extend to include guidance for TDS, ERDDAP etc?
+*If the document tries to be a primary source, then restrict it to netCDF; if the document aims to be a review, presenting summaries and pointing to primary sources, then open it up to the other standards, protocols and servers.*
 
 Do we discuss the relationship to Archives?
 
@@ -51,6 +45,8 @@ Organization of the material??
 - By platform?
 - By DSG?
 - By discipline?
+
+See [hierarchy.md](hierarchy.md) where I have attempted to make sense of the relationships.
 
 * DSG
     * point
@@ -82,7 +78,8 @@ The emphasis of this document is on how netCDF is used in conjunction with other
 **REQUIREMENT**: All IOOS data shall use the netcdf3 interface or the netcdf4-classic interface.
 
 ### Climate and Forecast and other netCDF Conventions
-Do I include a complete description of each data type or platform type here?
+Do I include a complete description of each data type or platform type here? 
+*Yes, we should describe within the scope of this document. Depends what we mean by complete. *
 Mention the compliance checker here or in the next higher section. Or, mention it in both. Introduce it in the next higher section and then show examples of how it can be run against some of the example data for a specific convention in the lower level section.
 
 ### Attribute Conventions for Dataset Discovery
@@ -98,7 +95,7 @@ Mention the compliance checker here or in the next higher section. Or, mention i
 
 ###Setting within the larger system, archive package, ncsos, automated asset inventory, maximal use of discovery portals 
 
-Example netcdf files for each in with platform, regular and irregular grids
+Example netcdf files for each with platform, regular and irregular grids
 
 ###Relationship to other standards and a picture explaining the role each standard plays.
 
@@ -106,14 +103,22 @@ Example configurations for each server type, really just thredds and erddap
 
 A similar repo for sos should include the templates, wsdd, and the list of tests we run.
 
-How can you participate? Fork, pull request etc
+
+##### How can you participate? 
+Description of github fork, pull request etc
 
 ## Resources
 
+Collection of links to websites, documents, other help.
+
 [NGDAC-NetCDF-File-Format-Version-2](https://github.com/ioos/ioosngdac/wiki/NGDAC-NetCDF-File-Format-Version-2)
+
+Information about netCDF [here](http://www.unidata.ucar.edu/software/netcdf/docs/faq.html).
 
 
 ##References
+
+References specific to this paper.
 
 Hankin, S. & Co-Authors (2010). "NetCDF-CF-OPeNDAP: Standards for Ocean Data Interoperability and Object Lessons for Community Data Standards Processes" in Proceedings of OceanObs’09: Sustained Ocean Observations and Information for Society (Vol. 2), Venice, Italy, 21-25 September 2009, Hall, J., Harrison, D.E. & Stammer, D., Eds., ESA Publication WPP-306, doi:10.5270/OceanObs09.cwp.41
 http://www.oceanobs09.net/proceedings/cwp/cwp41/
