@@ -6,16 +6,19 @@ Notes:
 1. Suggestion of an alternate name: opendap-guide?       
    _OPeNDAP_ - Open-source Project for a Network Data Access Protocol. OPeNDAP is both the name of a non-profit organization and the commonly-used name of a protocol which the OPeNDAP organization has developed.     
    _netCDF_ -  Network Common Data Format -- a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data.   
-NetCDF describes a file format. OPeNDAP is a network protocol to describe how to fetch a file.  
-
+NetCDF describes a file format. OPeNDAP is a network protocol to describe how to fetch a file?   
+     
 2. This document will serve to formulate a coherent email to circulate for input. 
-
+     
 3. Need to set up a task to create the gold standard data set.      
    What happens if we take that set of data and load it into:
       - THREDDS? 
       - ncSOS? 
       - ncISO?    
+    
+      
 
+4. Draft of the document starts below:
 
 # netCDF Guidelines
 ## Documentation and examples of IOOS compliant netCDF files.
@@ -23,13 +26,12 @@ NetCDF describes a file format. OPeNDAP is a network protocol to describe how to
 TODO: 
    - 
    - start with the [NODC templates](http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/). *Since IOOS channels data to NODC we should reiterate NODC's hope that providers will see the benefits in structuring data to the template conventions.*
-   - What happens if we take that set of data and load it in to
-      - THREDDS now? 
-      - ncSOS? 
-      - ncISO?    
+   
    I think there are TDS endpoints on their page, look through the rubric scores to see how they are doing.
 
 This repository provides documentation links and examples to encourage the IOOS community to more effectively use OPeNDAP, netCDF and related technologies to achieve interoperability.  [Hankin, et al](http://www.oceanobs09.net/proceedings/cwp/cwp41/), provide an excellent summary of how the trio of standards evolved and arguments for continuing a path toward interoperability based largely on the standards. This document, and the accompanying repository of material provides specific guidance for IOOS data providers, especially the 11 regional associations, shall implement the recommendations of [Hankin, et al](http://www.oceanobs09.net/proceedings/cwp/cwp41/). Additionally, this repository will provide examples of good data files and guidance for configuring OPeNDAP servers. 
+
+Information abouut netCDF [here](http://www.unidata.ucar.edu/software/netcdf/docs/faq.html).
 
 The primary objective of this document is to ensure that the data published according to these guidelines fit into the larger DMAC system and enables the following capabilities.
 
@@ -54,11 +56,18 @@ Organization of the material??
     * point
 
 ##Creating data files
-* netCDF: point to 
-   - start with the [NODC templates](http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/) page. *Since IOOS channels data to NODC we should reiterate NODC's hope that providers will see the benefits in structuring data to the template conventions.* Suggest not copying the entirety of that page, but paraphrase annd refer to it. 
-   * CF
+* netCDF: NODC provides templates for the production of preservable, discoverable accessible and interoperable data. 
+Since IOOS channels data to NODC we reiterate NODC's hope that providers will see the benefits in structuring data to the template conventions.
+
+   - The NOAA National Oceanographic Data Center (NODC) has developed netCDF templates based on what are called "feature types" by Unidata and CF. These templates conform to Unidata's netCDF Attribute Convention for Dataset Discovery (ACDD) and netCDF Climate and Forecast (CF) conventions. Adding to these established conventions, NODC also provides several recommendations for both netCDF variables and attributes. These best practices capture NODC's experience in providing long-term preservation, scientific quality control, product development, and multiple data re-use beyond its original intent.
+These templates are intended as a service to our community of Data Producers, and are also being used internally at NODC in our own data development efforts. We hope the templates will serve as good starting points for Data Producers who wish to create preservable, discoverable, accessible, and interoperable data. It is important to note that these templates do not represent an attempt to create a new standard, and they are not absolutely required for archiving data at NODC. However, we do hope that you will see the benefits in structuring your data following these conventions and NODC stands ready to assist you in doing so.
+We have published Version 1.0 of these templates at: http://www.nodc.noaa.gov/data/formats/netcdf/ Please see that page for more information, including access to the templates, a decision tree, and real-world examples following the templates. -- [NODC NetCDF Templates page](http://www.nodc.noaa.gov/data/formats/netcdf/v1.1/) page.  
+
+   * CF (Climate and Forecast)
+      
    * ACDD
-   * Community specific conventions (IOOS Gliders, OceanSITES, Argo) ( don't describe each just mention that another level of profiling or constraining the more general conventions is common.)
+   * Community specific conventions (IOOS Gliders, OceanSITES, Argo) 
+   ( don't describe each just mention that another level of profiling or constraining the more general conventions is common.)
    * UGrid (Gridspec?)
    
 ##Publishing data files using Data Access Services
