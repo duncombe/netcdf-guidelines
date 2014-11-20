@@ -4,11 +4,38 @@ netcdf-guidelines
 Notes: 
 
 1. Suggestion of an alternate name: opendap-guide?       
-   _OPeNDAP_ - Open-source Project for a Network Data Access Protocol. OPeNDAP is both the name of a non-profit organization and the commonly-used name of a protocol which the OPeNDAP organization has developed.     
-   _netCDF_ -  Network Common Data Format -- a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data.   
-NetCDF describes a file format. OPeNDAP is a network protocol to describe how to fetch a file?   
+   * _OPeNDAP_ - Open-source Project for a Network Data Access Protocol. OPeNDAP is both the name of a non-profit organization and the commonly-used name of a protocol which the OPeNDAP organization has developed.     
+   * _netCDF_ -  Network Common Data Format -- a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data.   
+
+    NetCDF describes a file format. OPeNDAP is a network protocol to describe how to fetch a file?   
      
-2. This document will serve to formulate a coherent email to circulate for input. 
+2. Scope: This document originally proposed as a  formulation of a coherent
+email to circulate for input. 
+
+    Is this primarily about netCDF files or should it extend to include
+guidance for TDS, ERDDAP etc?    
+    *If the document tries to be a primary
+source, then restrict it to netCDF; if the document aims to be a review,
+presenting summaries and pointing to primary sources, then open it up to
+the other standards, protocols and servers. The way it is developing it's
+starting to look like a review/overview. Should there be two documents? One
+introduction/review doc and then specific docs dealing with details?*
+
+    Do we discuss the relationship to Archives?    
+    *Yes, if it is a review, no if
+it is purely netCDF, except that archives expect and present netCDF data.*
+
+    Organization of the material??
+    - By standard?
+    - By platform?
+    - By DSG?
+    - By discipline?    
+     *all of the above, in sections*
+
+    See [hierarchy.md](./hierarchy.md) where I have attempted to make sense of the relationships.
+
+* DSG
+    * point
      
 3. Need to set up a task to create the gold standard data set.      
    What happens if we take that set of data and load it into:
@@ -35,21 +62,8 @@ The primary objective of this document is to ensure that the data published acco
 5. Identify areas where the supporting technologies are insufficient and in need of further development, or alternatively, identify practices which are well tested in realistic systems from those that are new or experimental (e.g. do we have a best practice for serving collections of trajectories?)
 
 ## Scope
-Is this primarily about netCDF files or should it extend to include guidance for TDS, ERDDAP etc?
-*If the document tries to be a primary source, then restrict it to netCDF; if the document aims to be a review, presenting summaries and pointing to primary sources, then open it up to the other standards, protocols and servers.*
 
-Do we discuss the relationship to Archives?
-
-Organization of the material??
-- By standard?
-- By platform?
-- By DSG?
-- By discipline?
-
-See [hierarchy.md](hierarchy.md) where I have attempted to make sense of the relationships.
-
-* DSG
-    * point
+To be decided...
 
 ##Creating data files
 * netCDF: NODC provides templates for the production of preservable, discoverable accessible and interoperable data. 
@@ -82,8 +96,24 @@ Do I include a complete description of each data type or platform type here?
 *Yes, we should describe within the scope of this document. Depends what we mean by complete. *
 Mention the compliance checker here or in the next higher section. Or, mention it in both. Introduce it in the next higher section and then show examples of how it can be run against some of the example data for a specific convention in the lower level section.
 
-### Attribute Conventions for Dataset Discovery
-####Version x.y
+### Attribute Convention for Dataset Discovery
+####Versions of ACDD
+
+See the 
+[ACDD Wiki](http://wiki.esipfed.org/index.php?title=Category:Attribute_Conventions_Dataset_Discovery)
+
+- Version 1.0 Original version published by Ethan Davis on the Unidata
+website. 
+- Version 1.1 Current Release:	This is the latest release of the ACDD. 
+- Version 1.2 early beta: A working
+draft of the 'next version' of ACDD updated
+intermittently to follow the modifications in 1.2.3 working
+- Version 1.2.3 working: This
+working page was maintained as a long modification section, also implementing a new hierarchy of pages. 
+- Version 1.3 Working Draft: This
+page is maintained as a working draft, in anticipation of its final release
+as version 1.3.
+
 
 ####Examples
 
@@ -93,9 +123,19 @@ Mention the compliance checker here or in the next higher section. Or, mention i
 ####Statement of requirements
 
 
-###Setting within the larger system, archive package, ncsos, automated asset inventory, maximal use of discovery portals 
+###Setting within the larger system
 
-Example netcdf files for each with platform, regular and irregular grids
+Example netcdf files for each of the following with platform, regular and 
+irregular grids
+
+####archive package
+
+####ncsos
+
+####automated asset inventory
+
+####maximal use of discovery portals 
+
 
 ###Relationship to other standards and a picture explaining the role each standard plays.
 
@@ -105,7 +145,20 @@ A similar repo for sos should include the templates, wsdd, and the list of tests
 
 
 ##### How can you participate? 
-Description of github fork, pull request etc
+
+Description of github fork, pull request etc.
+
+Participation is through collaborative development on open source sites,
+such as github, google docs, slashdot, et al. IOOS software and
+documentation development is conducted at [https://github.com/ioos].
+
+[Workflow on the IOOS github
+site](https://help.github.com/categories/bootcamp/) is to have three or four 'owners' who have
+rights to accept or refer changes. Collaborators ['fork' a
+repository](https://help.github.com/articles/fork-a-repo/), edit
+and develop in their own user space and [submit 'pull
+requests'](https://help.github.com/articles/using-pull-requests/) for
+inclusion of their work in the main repository. 
 
 ## Resources
 

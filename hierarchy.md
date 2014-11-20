@@ -1,6 +1,7 @@
 # Hierarchy of Data Dissemination
 
-An attempt to organize concepts into a hierarchical framework
+An attempt to organize concepts into a hierarchical framework. See also a
+glossary of acronyms at [https://duncombe.github.io/glossary]
 
 (metadata) - describes data    
   - included with data in the same file    
@@ -23,6 +24,7 @@ An attempt to organize concepts into a hierarchical framework
         - CF Convention conforming
       - netCDF 
       - netCDF3 
+      - netCDF4-classic
       - netCDF4 (contains HDF5)
     - HDF-4 (incompatible with HDF5)
     - HDF-5 (incompatible with HDF4)
