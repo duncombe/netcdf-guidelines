@@ -51,12 +51,32 @@ it is purely netCDF, except that archives expect and present netCDF data.*
 # netCDF Guidelines
 ## Documentation and examples of IOOS compliant netCDF files.
 
-This repository provides documentation links and examples to encourage the IOOS community to more effectively use OPeNDAP, netCDF and related technologies to achieve interoperability.  [Hankin, et al](http://www.oceanobs09.net/proceedings/cwp/cwp41/), provide an excellent summary of how the trio of standards (netCDF, CF, and OPeNDAP) evolved and arguments for continuing a path toward interoperability based largely on the standards. This document, and the accompanying repository of material provides specific guidance for IOOS data providers, especially the 11 regional associations, shall implement the recommendations of [Hankin, et al](http://www.oceanobs09.net/proceedings/cwp/cwp41/). Additionally, this repository will provide examples of good data files and guidance for configuring OPeNDAP servers. 
+This repository provides documentation links and examples to encourage the
+IOOS community to more effectively use OPeNDAP, netCDF and related
+technologies to achieve interoperability.  [Hankin, et
+al](http://www.oceanobs09.net/proceedings/cwp/cwp41/), provide an excellent
+summary of how the trio of standards (netCDF, CF, and OPeNDAP) evolved and
+arguments for continuing a path toward interoperability based largely on
+the standards. This document, and the accompanying repository of material
+provides specific guidance for IOOS data providers, especially the 11
+regional associations, shall implement the recommendations of [Hankin, et
+al](http://www.oceanobs09.net/proceedings/cwp/cwp41/). Additionally, this
+repository will provide examples of good data files and guidance for
+configuring OPeNDAP servers. 
 
-The primary objective of this document is to ensure that the data published according to these guidelines fit into the larger DMAC system and enables the following capabilities.
+The primary objective of this document is to ensure that the data published
+according to these guidelines fit into the larger DMAC system and enables
+the following capabilities.
 
-1. Through the use of tools like [ncISO](http://www.ngdc.noaa.gov/eds/tds/), high quality discovery metadata can be harvested from IOOS data services which can be loaded into discovery portals like the [IOOS Service Registry](https://geo-ide.noaa.gov/wiki/index.php?title=ESRI_Geoportal#IOOS_WAFs) at NGDC.
-2. Ensure capabilities of supported client software (e.g. ensure that [ncSOS](https://github.com/asascience-open/ncSOS/wiki) can generate valid SOS responses from the underlying netCDF-CF-OPeNDAP data set)
+1. Through the use of tools like
+[ncISO](http://www.ngdc.noaa.gov/eds/tds/), high quality discovery metadata
+can be harvested from IOOS data services which can be loaded into discovery
+portals like the [IOOS Service
+Registry](https://geo-ide.noaa.gov/wiki/index.php?title=ESRI_Geoportal#IOOS_WAFs)
+at NGDC.
+2. Ensure capabilities of supported client software (e.g. ensure that
+[ncSOS](https://github.com/asascience-open/ncSOS/wiki) can generate valid
+SOS responses from the underlying netCDF-CF-OPeNDAP data set)
 3. Integrate into supported delivery to operational systems like data assimilating ocean models, etc., *(need help here, do we have any of these?) UAF?*
 4. Ensure that any data published according to these guidelines is immediately acceptable as an archive submission to NODC.
 5. Identify areas where the supporting technologies are insufficient and in need of further development, or alternatively, identify practices which are well tested in realistic systems from those that are new or experimental (e.g. do we have a best practice for serving collections of trajectories?)
