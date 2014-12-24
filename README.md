@@ -1,54 +1,6 @@
 netcdf-guidelines
 =================
 
-Notes: 
-
-1. Suggestion of an alternate name: opendap-guide?       
-   * _OPeNDAP_ - Open-source Project for a Network Data Access Protocol. OPeNDAP is both the name of a non-profit organization and the commonly-used name of a protocol which the OPeNDAP organization has developed.     
-   * _netCDF_ -  Network Common Data Format -- a set of software libraries and self-describing, machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data.   
-
-    NetCDF describes a file format. OPeNDAP is a network protocol to describe how to fetch a file?   
-     
-2. Scope: This document originally proposed as a  formulation of a coherent
-email to circulate for input. 
-
-    Is this primarily about netCDF files or should it extend to include
-guidance for TDS, ERDDAP etc?    
-    *If the document tries to be a primary
-source, then restrict it to netCDF; if the document aims to be a review,
-presenting summaries and pointing to primary sources, then open it up to
-the other standards, protocols and servers. The way it is developing it's
-starting to look like a review/overview. Should there be two documents? One
-introduction/review doc and then specific docs dealing with details?*
-
-    Do we discuss the relationship to Archives?    
-    *Yes, if it is a review, no if
-it is purely netCDF, except that archives expect and present netCDF data.*
-
-    Organization of the material??
-    - By standard?
-    - By platform?
-    - By DSG?
-    - By discipline?    
-     *all of the above, in sections*
-
-    See [hierarchy.md](./hierarchy.md) where I have attempted to make sense of the relationships.
-
-* DSG
-    * point
-     
-3. Need to set up a task to create the gold standard data set.      
-   What happens if we take that set of data and load it into:
-      - THREDDS? 
-      - ncSOS? 
-      - ncISO?     
-4. "I think there are TDS endpoints on their page (NODC templates), look through the rubric scores to see how they are doing." I don't find what you are talking about?
-5. 
-
-
-4. Draft of the document starts below:
-
-# netCDF Guidelines
 ## Documentation and examples of IOOS compliant netCDF files.
 
 This repository provides documentation links and examples to encourage the
@@ -78,12 +30,18 @@ at NGDC.
 [ncSOS](https://github.com/asascience-open/ncSOS/wiki) can generate valid
 SOS responses from the underlying netCDF-CF-OPeNDAP data set)
 3. Integrate into supported delivery to operational systems like data assimilating ocean models, etc., *(need help here, do we have any of these?) UAF?*
-4. Ensure that any data published according to these guidelines is immediately acceptable as an archive submission to NODC.
-5. Identify areas where the supporting technologies are insufficient and in need of further development, or alternatively, identify practices which are well tested in realistic systems from those that are new or experimental (e.g. do we have a best practice for serving collections of trajectories?)
+4. Ensure that any data published according to these guidelines is
+immediately acceptable as an archive submission to NODC.
+5. Identify areas where the supporting technologies are insufficient and in
+need of further development, or alternatively, identify practices which are
+well tested in realistic systems from those that are new or experimental
+(e.g. do we have a best practice for serving collections of trajectories?)
 
 ## Scope
 
-To be decided...
+This document is not intended to be a primary resource but instead directs
+to manuals and primary  source mmaterial. 
+
 
 ##Creating data files
 * netCDF: NODC provides templates for the production of preservable, discoverable accessible and interoperable data. 
